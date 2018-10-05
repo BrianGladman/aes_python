@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <PYTHON_VERSION>37</PYTHON_VERSION>
+    <AES_LIB_PATH>..\..\aes\lib</AES_LIB_PATH>
+    <AES_INCLUDE_PATH>..\..\aes</AES_INCLUDE_PATH>
+    <AE_MODES_LIB_PATH>..\..\modes\lib</AE_MODES_LIB_PATH>
+    <AE_MODES_INCLUDE_PATH>..\..\modes</AE_MODES_INCLUDE_PATH>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="PYTHON_VERSION">
+      <Value>$(PYTHON_VERSION)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="AES_LIB_PATH">
+      <Value>$(AES_LIB_PATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="AES_INCLUDE_PATH">
+      <Value>$(AES_INCLUDE_PATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="AE_MODES_LIB_PATH">
+      <Value>$(AE_MODES_LIB_PATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="AE_MODES_INCLUDE_PATH">
+      <Value>$(AE_MODES_INCLUDE_PATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
